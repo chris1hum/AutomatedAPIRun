@@ -15,7 +15,7 @@ $curl_api = "curl_api()";
 //Function used to run the API using cURL
 function curl_api($start_date, $end_date) {
     //Replace the ' ' with a '+' in the query string so that the API call will work.
-    $url = str_replace(' ', '+', "https://example.com/apibroker/sql-data-dump-customer?&start_date=$start_date&end_date=$end_date");
+    $url = str_replace(' ', '+', "https://example.com/?&start_date=$start_date&end_date=$end_date");
     //runs the API
     $curl = curl_init();
 
